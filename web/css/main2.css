@@ -1,0 +1,16 @@
+body {
+  text-align: left; /* para IE6 */
+}
+#banner {
+  min-height: 100px;
+  width: 290px; /* el ancho del banner */
+  float:  left;  
+}
+#content {
+  width: 900px; /* el ancho del contenido */
+  margin: 0px auto; /* centrar el contenido en la p�gina */
+  text-align: left; /* para IE6 */
+}
+
+
+

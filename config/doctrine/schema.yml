@@ -1,0 +1,365 @@
+Canciones:
+  connection: doctrine
+  tableName: canciones
+  columns:
+    idcanciones:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombrecancion:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    interprete:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    album:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    genero:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ruta:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Cancionesporlista:
+      local: idcanciones
+      foreign: idcancionlista
+      type: many
+    Cancionesporusuario:
+      local: idcanciones
+      foreign: idcancionusuario
+      type: many
+Cancionesporlista:
+  connection: doctrine
+  tableName: cancionesporlista
+  columns:
+    loginpropietario:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    nombrelista:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    idcancionlista:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Listas:
+      local: nombrelista
+      foreign: nombrelistas
+      type: one
+    Listas_2:
+      class: Listas
+      local: loginpropietario
+      foreign: loginduenolista
+      type: one
+    Canciones:
+      local: idcancionlista
+      foreign: idcanciones
+      type: one
+Cancionesporusuario:
+  connection: doctrine
+  tableName: cancionesporusuario
+  columns:
+    logintitular:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    idcancionusuario:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Usuarios:
+      local: logintitular
+      foreign: login
+      type: one
+    Canciones:
+      local: idcancionusuario
+      foreign: idcanciones
+      type: one
+    Compartidas:
+      local: logintitular
+      foreign: loginremitente
+      type: many
+    Compartidas_2:
+      class: Compartidas
+      local: idcancionusuario
+      foreign: idcancioncompartida
+      type: many
+Carrito:
+  connection: doctrine
+  tableName: carrito
+  columns:
+    idcompra:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    logincomprador:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    idcancioncomprada:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    precio:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Usuarios:
+      local: logincomprador
+      foreign: login
+      type: one
+    Disponibles:
+      local: idcancioncomprada
+      foreign: iddisponibles
+      type: one
+Compartidas:
+  connection: doctrine
+  tableName: compartidas
+  columns:
+    loginremitente:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    idcancioncompartida:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    logindestinatario:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Cancionesporusuario:
+      local: loginremitente
+      foreign: logintitular
+      type: one
+    Cancionesporusuario_2:
+      class: Cancionesporusuario
+      local: idcancioncompartida
+      foreign: idcancionusuario
+      type: one
+    Usuarios:
+      local: logindestinatario
+      foreign: login
+      type: one
+Disponibles:
+  connection: doctrine
+  tableName: disponibles
+  columns:
+    iddisponibles:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombrecancion:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    interprete:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    album:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    genero:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ruta:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    precio:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Carrito:
+      local: iddisponibles
+      foreign: idcancioncomprada
+      type: many
+Listas:
+  connection: doctrine
+  tableName: listas
+  columns:
+    nombrelistas:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    loginduenolista:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Usuarios:
+      local: loginduenolista
+      foreign: login
+      type: one
+    Cancionesporlista:
+      local: nombrelistas
+      foreign: nombrelista
+      type: many
+    Cancionesporlista_2:
+      class: Cancionesporlista
+      local: loginduenolista
+      foreign: loginpropietario
+      type: many
+Usuarios:
+  connection: doctrine
+  tableName: usuarios
+  columns:
+    login:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    contrasena:
+      type: string(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    correo:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nombres:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    apellidos:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sexo:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fechanacimiento:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Cancionesporusuario:
+      local: login
+      foreign: logintitular
+      type: many
+    Carrito:
+      local: login
+      foreign: logincomprador
+      type: many
+    Compartidas:
+      local: login
+      foreign: logindestinatario
+      type: many
+    Listas:
+      local: login
+      foreign: loginduenolista
+      type: many
