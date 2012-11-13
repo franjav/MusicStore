@@ -4,7 +4,7 @@
 <table border="1" width="65%" cellspacing="0" class="tablesorter">
   <thead>
     <tr>
-      <!--<th>Iddisponibles</th>-->
+      <th></th>
       <th>Nombrecancion</th>
       <th>Interprete</th>
       <th>Album</th>
@@ -17,14 +17,14 @@
   <tbody>
     <?php foreach ($disponibless as $disponibles): ?>
     <tr>
-    
+      <td><a href="<?php echo url_for('disponibles/show?iddisponibles='.$disponibles->getIddisponibles()) ?>">ver</a></td>  
       <td><?php echo $disponibles->getNombrecancion() ?></td>
       <td><?php echo $disponibles->getInterprete() ?></td>
       <td><?php echo $disponibles->getAlbum() ?></td>
       <td><?php echo $disponibles->getGenero() ?></td>
       <td><?php echo $disponibles->getRuta() ?></td>
       <td><?php echo $disponibles->getPrecio() ?></td>
-      <td><a href="carro.php?idDisponibles=<?php echo $f['idDisponibles'];?>"><img src="../../web/images/carrito.png"></a></td>
+      <td><a href="carrito/edit?idCompra=<?php echo $disponibles['iddisponibles'];?>"><img src="../../web/images/carrito.png"></a></td>
       
     </tr>
     <?php endforeach; ?>

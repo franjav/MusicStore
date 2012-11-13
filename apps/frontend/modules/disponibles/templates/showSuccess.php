@@ -32,7 +32,7 @@
 </table>
 
 <hr />
-
-<a href="<?php echo url_for('disponibles/edit?iddisponibles='.$disponibles->getIddisponibles()) ?>">Edit</a>
+<!--
+--><a href="<?php echo url_for('disponibles/edit?iddisponibles='.$disponibles->getIddisponibles()) ?>">Edit</a>
 &nbsp;
-<a href="<?php echo url_for('disponibles/index') ?>">List</a>
+<a href="<?php echo url_for('disponibles/index') ?>"><img src="../../../../../web/images/atras.png" /></a> 

@@ -16,7 +16,23 @@ class disponiblesActions extends sfActions
       ->createQuery('a')
       ->execute();
   }
+ public function executeBuscar(sfWebRequest $request)
+  {
+        // inicializando variables
+        $aDisponibles = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
 
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $aDisponibles = Doctrine_Core::getTable('disponibles')->findOneBynombreCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->aDisponibles = $aDisponibles;
+  }
+  
   public function executeShow(sfWebRequest $request)
   {
     $this->disponibles = Doctrine_Core::getTable('Disponibles')->find(array($request->getParameter('iddisponibles')));

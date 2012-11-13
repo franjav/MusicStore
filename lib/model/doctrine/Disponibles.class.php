@@ -12,5 +12,10 @@
  */
 class Disponibles extends BaseDisponibles
 {
+    public function __toString()
+   {
+       return $this->getIdDisponibles();
+   }
+
 
 }

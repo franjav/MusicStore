@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Idcompra</th>
+<!--      <th>Idcompra</th>-->
       <th>Logincomprador</th>
       <th>Idcancioncomprada</th>
       <th>Fecha</th>
