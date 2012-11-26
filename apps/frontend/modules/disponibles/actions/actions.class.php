@@ -70,8 +70,47 @@ class disponiblesActions extends sfActions
         $this->txt_identificacion = $txt_identificacion;
         $this->aDisponibles = $dDisponibles;
   }
+  
+   public function executeNorecomend(sfWebRequest $request)
+  { 
+               // inicializando variables
+        $fDisponibles = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
 
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $fDisponibles = Doctrine_Core::getTable('disponibles')->findOneByidCancion("$txt_identificacion");
+        }
 
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->aDisponibles = $fDisponibles;
+  }
+  
+  
+  
+
+  public function executeRecomend(sfWebRequest $request)
+  { 
+               // inicializando variables
+        $eDisponibles = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $eDisponibles = Doctrine_Core::getTable('disponibles')->findOneByidCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->aDisponibles = $eDisponibles;
+  }
+  
+  
+  
+  
   public function executeNew(sfWebRequest $request)
   {
     $this->form = new DisponiblesForm();

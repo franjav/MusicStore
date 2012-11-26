@@ -1,13 +1,11 @@
+
+<html>
+<center><h1> <?php echo $disponibles->getNombrecancion() ?></h1></center>
 <table  border="1" width="65%" cellspacing="0" class="tablesorter">
-  <tbody>
+  
     <tr>
       <th>Iddisponibles:</th>
       <td><?php echo $disponibles->getIddisponibles() ?></td>
-    </tr>
-    <tr>
-      <th>Nombrecancion:</th>
-      <td><?php echo $disponibles->getNombrecancion() ?></td>
-    </tr>
     <tr>
       <th>Interprete:</th>
       <td><?php echo $disponibles->getInterprete() ?></td>
@@ -28,11 +26,11 @@
       <th>Precio:</th>
       <td><?php echo $disponibles->getPrecio() ?></td>
     </tr>
-  </tbody>
+  
 </table>
 
 <hr />
-<!--
---><a href="<?php echo url_for('disponibles/edit?iddisponibles='.$disponibles->getIddisponibles()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('disponibles/index') ?>"><img src="../../../../../web/images/atras.png" /></a> 
+<tr>
+<a href="<?php echo url_for('disponibles/index') ?>"><img src="../../../../../web/images/atras.png" /></a> ATRAS
+</tr>
+</html>

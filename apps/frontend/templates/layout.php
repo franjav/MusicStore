@@ -94,13 +94,20 @@
         
         <aside id="rsidebar" class="column">
             <h3>PROMOCIONES DEL DIA</h3>
+            
                 <a href="<?php echo url_for('disponibles/index') ?>"> <img src="../../web/images/2x1.PNG" width="150" height="146" style="margin: 2%" /></a>
                 <a href="<?php echo url_for('disponibles/index') ?>"><img src="../../web/images/40.png" width="150" height="146" style="margin: 2%"/></a> 
                 <hr/>
                 
-                <h3>Top 5 de la semana</h3>
-                Cancion 1 - <a href="<?php echo url_for('disponibles/show?iddisponibles=1') ?>">Ver Info</a><br>
-                Cancion 2 - <a href="<?php echo url_for('disponibles/show?iddisponibles=2') ?>">Ver Info</a>
+                <h3><a href="disponibles/recomend">Top 5 de la semana</a></h3>
+<!--               
+                <ul  class="toggle">
+          
+    
+          
+                  
+                </ul>-->
+               
 	</aside>
   </body>
 </html>

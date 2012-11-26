@@ -32,12 +32,11 @@ $re=mysql_query("select * from disponibles");
       <td><?php echo $disponibles->getInterprete() ?></td>
       <td><?php echo $disponibles->getAlbum() ?></td>
       <td><?php echo $disponibles->getGenero() ?></td>
-      <td><?php echo $disponibles->getRuta() ?></td>
+       <td><a href="disponibles/recomend?iddisponibles=<?php echo $disponibles['iddisponibles'];?>">Recomendar</a></td>     
       <td><?php echo $disponibles->getPrecio() ?></td>
           
       <td><a href="disponibles/add?iddisponibles=<?php echo $disponibles['iddisponibles'];?>"><img src="../../web/images/carrito.png"></a></td>
-            
-      
+     
     </tr>
     <?php endforeach; ?>
   </tbody>
