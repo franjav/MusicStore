@@ -7,9 +7,6 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-                
-
-
          
         <script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
         <script type="text/javascript">  
@@ -27,9 +24,9 @@
         <hgroup>
         <h1 class="site_title"><a href="index.html">Website Admin</a></h1>
         <h2 class="section_title">MUSICSTORE</h2>
-        <div class="btn_view_site"><a href="index.html"><img src="../../web/images/musicstore.jpeg" width="150" height="70" style="padding: 6px;"></a></div>
+        <!--<a href="index.html"><img src="../../web/images/musicstore.png" width="100" height="45" style="padding: 6px;"></a>-->
         </hgroup>
-        </header> <!-- end of header bar -->
+      </header> <!-- end of header bar -->
       
       <section id="secondary_bar">
 		<div class="user">
@@ -48,22 +45,22 @@
 
          <h3>Mi Perfil</h3>
                 <ul class="toggle">
-                    <li class="icn_add_user"> <a href="<?php echo url_for('usuarios/new') ?>">Editar Perfil</a></li>
+                    <li class="icn_edit_article"> <a href="<?php echo url_for('usuarios/new') ?>">Editar Perfil</a></li>
                 </ul>
          <h3>Mis Canciones</h3>
 		<ul class="toggle">
-                    <li class="icn_add_user"><a href="<?php echo url_for('canciones/new') ?>">Subir Canciones</a></li>
-                    <li class="icn_search"><a href="<?php echo url_for('canciones/index') ?>">Listar Canciones</a></li>
+                    <li class="icn_categories"><a href="<?php echo url_for('canciones/index') ?>">Listar Canciones</a></li>
+                    <li class="icn_new_article"><a href="<?php echo url_for('canciones/new') ?>">Subir Canciones</a></li>
               	</ul>
           <h3>Mis Listas</h3>
 		<ul class="toggle">
-                      <li class="icn_add_user"><a href="<?php echo url_for('listas/index') ?>">Ver Listas</a></li>
-                      <li class="icn_add_user"><a href="<?php echo url_for('listas/new') ?>">Crear Listas</a></li>
+                    <li class="icn_categories"><a href="<?php echo url_for('listas/index') ?>">Ver Listas</a></li>
+                    <li class="icn_new_article"><a href="<?php echo url_for('listas/new') ?>">Crear Listas</a></li>
 	  	</ul>
           <h3>Comprar Canciones</h3>
 		<ul class="toggle">
-                  <li class="icn_new_article"><a href="<?php echo url_for('disponibles/index') ?>">Ver Canciones Disponibles</a></li>
-                  <li class="icn_search"><a href="<?php echo url_for('disponibles/buscar') ?>">Buscar Canciones</a></li>
+                    <li class="icn_categories"><a href="<?php echo url_for('disponibles/index') ?>">Ver Canciones Disponibles</a></li>
+                    <li class="icn_search"><a href="<?php echo url_for('disponibles/buscar') ?>">Buscar Canciones</a></li>
 	  	</ul>
 
             <h3>Reportes</h3>
@@ -74,51 +71,36 @@
                   
                 </ul>
 
-            <footer>
-			<hr />
-			<p><strong>Copyright &copy; 2012 Marysoft</strong></p>
-			<p>Theme by <a href="http://www.medialoot.com">MediaLoot</a></p>
-		</footer>
+                <footer>
+                    <hr />
+                    <p><strong>Copyright &copy; 2012 Marysoft</strong></p>
+                    <p>Theme by <a href="http://www.medialoot.com">MediaLoot</a></p>
+                </footer>
 	</aside><!-- end of sidebar -->
 
         <section id="main" class="column">
 		<center><h4 class="alert_info">Bienvenido Administrador </h4></center><!-- end of stats article -->
           
-
-    <section id="audioplayer_1" class="column">
-        <script type="text/javascript">
-    AudioPlayer.embed("audioplayer_1", {soundFile: "http://localhost/musicstore/web/pru.mp3"});
-    var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
-        </script>  
-    </section>
-
-   
-             
-           <?php echo $sf_content ?>
-                 
-                
-                
-          
-                
+                <section id="audioplayer_1" class="column">
+                    <script type="text/javascript">
+                        AudioPlayer.embed("audioplayer_1", {soundFile: "http://localhost/musicstore/web/pru.mp3"});
+                        var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
+                    </script>  
+                </section>
+            
+                <?php echo $sf_content ?>                 
         </section>
 
         
-        
-         <aside id="rsidebar" class="column">      
-            <div class="CollapsiblePanelTab" tabindex="0">
-              
-                <div  id="banner" class="publicidad"> <h4 class="alert_info">PROMOCIONES DEL DIA</h4> 
-
-                <a href="<?php echo url_for('disponibles/index') ?>"> <img src="../../web/images/2x1.PNG" width="150" height="146" style="padding: 10px;" /></a>
-                <a href="<?php echo url_for('disponibles/index') ?>"><img src="../../web/images/40.png" width="150" height="146" style="padding: 10px;" /></a> 
-                <a href="<?php echo url_for('disponibles/index') ?>"><img src="../../web/images/gratis.png" width="150" height="146" style="padding: 10px;" /></a> 
-                <div id="CollapsiblePanel1" class="CollapsiblePanel">
-  
-            <div class="CollapsiblePanelContent"></div>
-        </div>
-    </div>
-  </div>
+        <aside id="rsidebar" class="column">
+            <h3>PROMOCIONES DEL DIA</h3>
+                <a href="<?php echo url_for('disponibles/index') ?>"> <img src="../../web/images/2x1.PNG" width="150" height="146" style="margin: 2%" /></a>
+                <a href="<?php echo url_for('disponibles/index') ?>"><img src="../../web/images/40.png" width="150" height="146" style="margin: 2%"/></a> 
+                <hr/>
                 
-           </aside>
+                <h3>Top 5 de la semana</h3>
+                Cancion 1 - <a href="<?php echo url_for('disponibles/show?iddisponibles=1') ?>">Ver Info</a><br>
+                Cancion 2 - <a href="<?php echo url_for('disponibles/show?iddisponibles=2') ?>">Ver Info</a>
+	</aside>
   </body>
 </html>

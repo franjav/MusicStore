@@ -34,8 +34,9 @@ text-decoration: underline;
 /* Header */
 
 header#header {
+    
 height: 55px;
-width: 93%;
+width: 100%;
 background: #222222 url(../images/header_bg.png) repeat-x;
 }
 
@@ -44,7 +45,7 @@ float: left;
 margin: 0;
 font-size: 22px;
 display: block;
-width: 23%;
+width: 20%; /*23%*/
 height: 55px;
 font-weight: normal;
 text-align: left;
@@ -60,10 +61,12 @@ text-decoration: none;
 }
 
 header#header h2.section_title {
-text-align: center;
-text-indent: 4.5%;
+text-align: left; /*center*/
+text-indent: 27.5%; /*4.5%*/
 width: 68%;
 background: url(../images/header_shadow.png) no-repeat left top;
+background-image: url(../images/musicstore1.png);
+background-position: 65%;
 }
 
 .btn_view_site {
@@ -97,7 +100,7 @@ background: #F1F1F4 url(../images/secondary_bar.png) repeat-x;
 
 section#secondary_bar .user {
 float: left;
-width: 17%;
+width: 20%; /*17%, Inicial: 23%*/ 
 height: 38px;
 }
 
@@ -194,10 +197,10 @@ margin: 0 5px;
 
 aside#sidebar {
 text-align: left;    
-width: 17%;
+width: 20%; /*17% Inicial: 23%*/
 background: #E0E0E3 url(../images/sidebar.png) repeat;
 float: left;
-min-height: 500px;
+min-height: 627px; /*800px 900px Inicial: 500px*/
 margin-top: -4px;
 }
 
@@ -213,11 +216,12 @@ height: 2px;}
 /* RSidebar */
 
 aside#rsidebar {
-width: 15%;
+width: 13%;
 background: #E0E0E3 url(../images/sidebar.png) repeat;
 float: right;
-min-height: 300px;
+min-height: 600px;
 margin-top: -4px;
+padding: 1%;
 }
 
 #rsidebar hr {
@@ -226,12 +230,21 @@ outline: none;
 background: url(../images/sidebar_divider.png) repeat-x;
 display: block;
 width: 100%;
-height: 2px;}
+height: 2px;
 
+}
 
-
-
-
+#rsidebar h3 {
+text-align: center;    
+color: #1F1F20;
+text-transform: uppercase;
+text-shadow: 0 1px 0 #fff;
+font-size: 13px;
+margin: 10px 0 10px 6%;
+display: block;
+float: left;
+width: 90%;
+}
 
 /* Search */
 
@@ -383,7 +396,7 @@ text-decoration: underline;
 }
 
 #sidebar footer {
-margin-top: 30%;
+margin-top: 20%; /*30%*/
 }
 
 
@@ -391,8 +404,8 @@ margin-top: 30%;
 
 
 section#main {
-width: 62%;
-min-height: 400px;
+width: 64%; /*62%, Inicial 77%*/
+min-height: 400px; /*500px*/
 background: url(../images/sidebar_shadow.png) repeat-y left top;
 float: left;
 margin-top: -2px;

@@ -16,6 +16,22 @@ class disponiblesActions extends sfActions
       ->createQuery('a')
       ->execute();
   }
+  public function executeAdd(sfWebRequest $request)
+  {
+        // inicializando variables
+        $cDisponibles = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $cDisponibles = Doctrine_Core::getTable('disponibles')->findOneByidCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->aDisponibles = $cDisponibles;
+  }
  public function executeBuscar(sfWebRequest $request)
   {
         // inicializando variables
@@ -38,6 +54,23 @@ class disponiblesActions extends sfActions
     $this->disponibles = Doctrine_Core::getTable('Disponibles')->find(array($request->getParameter('iddisponibles')));
     $this->forward404Unless($this->disponibles);
   }
+   public function executeBorrar(sfWebRequest $request)
+  { 
+               // inicializando variables
+        $dDisponibles = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $dDisponibles = Doctrine_Core::getTable('disponibles')->findOneByidCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->aDisponibles = $dDisponibles;
+  }
+
 
   public function executeNew(sfWebRequest $request)
   {

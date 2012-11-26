@@ -27,6 +27,7 @@ class carritoActions extends sfActions
   {
     $this->form = new CarritoForm();
   }
+ 
 
   public function executeCreate(sfWebRequest $request)
   {

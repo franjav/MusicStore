@@ -1,4 +1,4 @@
-<table>
+<table  border="1" width="65%" cellspacing="0" class="tablesorter">
   <tbody>
     <tr>
       <th>Iddisponibles:</th>
