@@ -99,7 +99,9 @@
                 <a href="<?php echo url_for('disponibles/index') ?>"><img src="../../web/images/40.png" width="150" height="146" style="margin: 2%"/></a> 
                 <hr/>
                 
-                <h3><a href="disponibles/recomend">Top 5 de la semana</a></h3>
+                <h3>Top 5 de la semana</h3>
+                <a href="<?php echo url_for('disponibles/recomend') ?>"> <img src="../../web/images/top5.PNG" width="150" height="146" style="margin: 2%" /></a>
+               
 <!--               
                 <ul  class="toggle">
           
