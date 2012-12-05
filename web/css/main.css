@@ -193,6 +193,12 @@ float: left;
 margin: 0 5px;
 }
 
+
+
+
+
+
+
 /* Sidebar */
 
 aside#sidebar {
@@ -398,6 +404,18 @@ text-decoration: underline;
 #sidebar footer {
 margin-top: 20%; /*30%*/
 }
+
+section#prueba {
+
+
+/*width: 64%; /*62%, Inicial 77%
+min-height: 400px; /*500px
+background:  repeat-y left top;
+float: right;
+margin-top: -2px;*/
+}
+
+
 
 
 /* Main Content */

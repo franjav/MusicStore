@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [main.css,main2.css]
 
-  javascripts:    [hideshow.js,jquery-1.5.2.min.js,jquery.equalHeight.js,jquery.tablesorter.min.js,audio-player.js]
+  javascripts:    [hideshow.js,jquery-1.5.2.min.js,jquery.equalHeight.js,jquery.tablesorter.min.js,audio-player.js,swfobject.js]
 
   has_layout:     true
   layout:         layout

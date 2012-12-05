@@ -14,7 +14,22 @@
  <ul class="sf_admin_actions">
      <input type="submit" value="Buscar" />
 </ul>
-<?php if (count($aDisponibles) > 1) {
+<?php 
+
+
+
+//$criterio = "";
+//$txt_criterio = "";
+//if ($_GET["criterio"]!=""){
+//   $txt_criterio = $_GET["criterio"];
+//   $criterio = " where nombreCancion like '%" . $txt_criterio . "%' or interprete like '%" . $txt_criterio . "%' or album like '%" . $txt_criterio . "%'";
+//} 
+//
+//$sql="SELECT * FROM disponibles ".$criterio; 
+//
+//$res=mysql_query($sql);
+//echo $res
+if (count($aDisponibles) > 1) {
         if ($txt_identificacion) { ?>
     <?php } ?>
 

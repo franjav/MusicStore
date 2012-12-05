@@ -1,3 +1,9 @@
+<html>
+    
+    <head>
+<script language="javascript" type="text/javascript" src="swfobject.js" ></script>  
+    </head>
+
 <center><h1>MIS CANCIONES</h1></center>
 
 <table border="1" width="65%" cellspacing="0" class="tablesorter">
@@ -9,6 +15,8 @@
       <th>Album</th>
       <th>Genero</th>
       <th>Ruta</th>
+      <th>Reproducir</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -20,9 +28,12 @@
       <td><?php echo $canciones->getAlbum() ?></td>
       <td><?php echo $canciones->getGenero() ?></td>
       <td><?php echo $canciones->getRuta() ?></td>
+      <td></td>
+      
     </tr>
     <?php endforeach; ?>
   </tbody>
 </table>
 
   <!--<a href="<?php echo url_for('canciones/new') ?>">New</a>-->
+</html>
