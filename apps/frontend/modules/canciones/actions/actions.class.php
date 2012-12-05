@@ -73,10 +73,10 @@ class cancionesActions extends sfActions
     {  
         $file = $form->getValue('ruta');
         //Hay que recuperar el login del usuario
-       $user = "juan23";
+       $user = "\juan23";
        $filename = 'load'.($file->getOriginalName());
        $extension = $file->getExtension($file->getOriginalExtension());
-       $pistamp3 = sfConfig::get('sf_upload_dir') . '/' . $user . '/' . $filename . $extension;
+       $pistamp3 = sfConfig::get('sf_upload_dir') . $user . '/' . $filename ;
        $file->save($pistamp3);
       $canciones = $form->save();
 
