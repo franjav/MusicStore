@@ -4,7 +4,7 @@
     <head>
   
     </head>
-
+<?php decorate_with('layout')?>
 <center><h1>MIS CANCIONES</h1></center>
 
 <table border="1" width="65%" cellspacing="0" class="tablesorter">

@@ -10,8 +10,10 @@
  */
 class listasActions extends sfActions
 {
+    
   public function executeIndex(sfWebRequest $request)
   {
+    $this->setLayout('layout');
     $this->listass = Doctrine_Core::getTable('Listas')
       ->createQuery('a')
       ->execute();
@@ -26,6 +28,7 @@ class listasActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
+    $this->setLayout('layout_sn');
     $this->form = new ListasForm();
   }
 

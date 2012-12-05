@@ -1,6 +1,7 @@
 
 
 <html>
+<?php decorate_with('layout')?>
 <center><h1>CANCIONES DISPONIBLES</h1></center>
 
 <table border="1" width="65%" cellspacing="0" class="tablesorter">

@@ -1,4 +1,5 @@
-<h1>MIS LISTAS DE REPRODUCCION</h1>
+<?php decorate_with('layout')?>
+<center><h1>MIS LISTAS DE REPRODUCCION</h1></center>
 
 <table border="1" width="65%" cellspacing="0" class="tablesorter">
   <thead>

@@ -1,4 +1,5 @@
 <?php
+decorate_with('layout_sn');
 if(isset($_GET['iddisponibles'])){
 $_SESSION['recomendadas'][$_GET['iddisponibles']]=$_GET['iddisponibles'];
  }

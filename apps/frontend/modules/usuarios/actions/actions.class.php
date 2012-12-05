@@ -25,6 +25,7 @@ class usuariosActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
+    $this->setLayout('layout');
     $this->form = new UsuariosForm();
   }
 

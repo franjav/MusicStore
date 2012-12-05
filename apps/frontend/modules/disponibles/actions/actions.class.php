@@ -12,6 +12,8 @@ class disponiblesActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+    
+    $this->setLayout('layout');
     $this->disponibless = Doctrine_Core::getTable('Disponibles')
       ->createQuery('a')
       ->execute();
@@ -34,6 +36,7 @@ class disponiblesActions extends sfActions
   }
  public function executeBuscar(sfWebRequest $request)
   {
+        $this->setLayout('layout_sn');    
         // inicializando variables
         $aDisponibles = array();
         // tomando los datos del formulario
@@ -73,6 +76,7 @@ class disponiblesActions extends sfActions
   
    public function executeNorecomend(sfWebRequest $request)
   { 
+       $this->setLayout('layout_sn');
                // inicializando variables
         $fDisponibles = array();
         // tomando los datos del formulario
@@ -93,6 +97,7 @@ class disponiblesActions extends sfActions
 
   public function executeRecomend(sfWebRequest $request)
   { 
+      $this->setLayout('layout_sn');
                // inicializando variables
         $eDisponibles = array();
         // tomando los datos del formulario

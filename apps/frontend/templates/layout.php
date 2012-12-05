@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-        <script language="javascript" type="text/javascript" src="../../web/flashmp3player/swfobject.js" ></script>   
+        <!--<script language="javascript" type="text/javascript" src="../../web/flashmp3player/swfobject.js" ></script>-->   
         <!--<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
         <script type="text/javascript">  
             AudioPlayer.setup("http://localhost/musicstore/web/player.swf", {  
@@ -123,7 +123,7 @@
 </object>-->
 
         <section id="prueba">
-            <embed src="../Reproductor Robnei/index.htm" name="obj1" width="410" height="600">
+            <center><embed src="../Reproductor Robnei/index.htm" name="obj1" width="410" height="600"></center>
         </section>
 
   </body>

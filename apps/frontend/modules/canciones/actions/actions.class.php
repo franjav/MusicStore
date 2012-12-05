@@ -12,6 +12,7 @@ class cancionesActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+    $this->setLayout('layout');
     $this->cancioness = Doctrine_Core::getTable('Canciones')
       ->createQuery('a')
       ->execute();
@@ -25,6 +26,7 @@ class cancionesActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
+    $this->setLayout('layout_sn');
     $this->form = new CancionesForm();
   }
 
@@ -74,9 +76,9 @@ class cancionesActions extends sfActions
         $file = $form->getValue('ruta');
         //Hay que recuperar el login del usuario
        $user = "\juan23";
-       $filename = 'load'.($file->getOriginalName());
+       $filename = '\load'.($file->getOriginalName());
        $extension = $file->getExtension($file->getOriginalExtension());
-       $pistamp3 = sfConfig::get('sf_upload_dir') . $user . '/' . $filename ;
+       $pistamp3 = sfConfig::get('sf_upload_dir') . $user . $filename ;
        $file->save($pistamp3);
       $canciones = $form->save();
 

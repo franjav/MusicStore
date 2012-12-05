@@ -1,5 +1,5 @@
-<?php use_helper("I18N");?>
-<?php ?>
+<?php use_helper("I18N");
+decorate_with('layout_sn');?>
 <div id="sf_admin_container">
     <center><h1>Buscar Disponible</h1></center>
     <?php echo form_tag('disponibles/buscar', 'id=sf_admin_edit_form name=sf_admin_edit_form multipart=true') ?>
