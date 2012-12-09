@@ -1,14 +1,4 @@
-## YAML Template.
----
-#defalut:
-#    layout:  login_layout
-
-
-
 default:
-
- ##newSucces:  
- ##layout:         layout_sn
  
  stylesheets: [style.css,input_style.css,login_style.css,animate-custom.css]
  layout:  login_layout

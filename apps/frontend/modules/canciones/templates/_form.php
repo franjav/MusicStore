@@ -8,12 +8,14 @@
   <table>
     <tfoot>
       <tr>
-        <td colspan="2">
+        <td colspan="2" width="50%">
           &nbsp;<a href="<?php echo url_for('canciones/index') ?>">Ver Listas</a>
            &nbsp;<?php if (!$form->getObject()->isNew()): ?>
             &nbsp;<?php echo link_to('Delete', 'canciones/delete?idcanciones='.$form->getObject()->getIdcanciones(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
-          <input type="submit" value="SUBIR" />
+            <p class="signin button">
+                <input type="submit" value="Subir" />
+            </p>
         </td>
       </tr>
     </tfoot>

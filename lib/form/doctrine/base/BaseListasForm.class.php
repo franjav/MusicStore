@@ -15,12 +15,13 @@ abstract class BaseListasForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'nombrelistas'    => new sfWidgetFormInputHidden(),
+      'nombrelistas'    => new sfWidgetFormInputText(),
       'loginduenolista' => new sfWidgetFormInputHidden(),
     ));
 
     $this->setValidators(array(
-      'nombrelistas'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('nombrelistas')), 'empty_value' => $this->getObject()->get('nombrelistas'), 'required' => false)),
+      //'nombrelistas'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('nombrelistas')), 'empty_value' => $this->getObject()->get('nombrelistas'), 'required' => false)),
+      'nombrelistas' => new sfValidatorString(array('required'=>true), array('required'=>'Debe ingresar un nombre para la lista.')),
       'loginduenolista' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('loginduenolista')), 'empty_value' => $this->getObject()->get('loginduenolista'), 'required' => false)),
     ));
 

@@ -7,7 +7,7 @@
 <?php decorate_with('layout')?>
 <center><h1>MIS CANCIONES</h1></center>
 
-<table border="1" width="65%" cellspacing="0" class="tablesorter">
+<table border="1" width="150%" cellspacing="0" class="tablex">
   <thead>
     <tr>
     

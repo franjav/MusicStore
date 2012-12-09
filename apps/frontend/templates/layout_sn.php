@@ -7,14 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-        <!--<script language="javascript" type="text/javascript" src="../../web/flashmp3player/swfobject.js" ></script>-->   
-        <!--<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
-        <script type="text/javascript">  
-            AudioPlayer.setup("http://localhost/musicstore/web/player.swf", {  
-                width: 350 
-            });  
-        </script>-->
-  
+       
 		
   <link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
 </head>
@@ -77,22 +70,14 @@
                     <p>Theme by <a href="http://www.medialoot.com">MediaLoot</a></p>
                 </footer>
 	</aside><!-- end of sidebar -->
-
+        
         <section id="main" class="column">
 		<center><h4 class="alert_info">Bienvenido Administrador </h4></center><!-- end of stats article -->
           
-<!--                <section id="audioplayer_1" class="column">
-                    <script type="text/javascript">
-                        AudioPlayer.embed("audioplayer_1", {soundFile: "http://localhost/musicstore/web/pru.mp3"});
-                        var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
-                    </script>  
-                </section>-->
-                <!-- DIV que contiene el reproductor. -->
-<!-- DIV que contiene el reproductor. -->
-
-                
-            
-                <?php echo $sf_content ?>                 
+                <!-- ESTO PARA DARLE UN ESTILO A TODOS LOS FORMULARIOS EN ESTA SECCION -->
+                <div id="wrapper">             
+                     <?php echo $sf_content ?>                     
+                </div>  
         </section>
 
         
@@ -106,17 +91,11 @@
                 <h3>Top 5 de la semana</h3>
                 <a href="<?php echo url_for('disponibles/recomend') ?>"> <img src="../../../web/images/top5.PNG" width="150" height="146" style="margin: 2%" /></a>
                
-<!--               
-                <ul  class="toggle">                 
-                </ul>-->
+
                
 	</aside>
 
-<!--<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="repro" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="393" height="544">
-	<param name="movie" value="Player.swf">
-	<param name="quality" value="High">
-	<embed src="../Reproductor Robnei/Player.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="393" height="544">
-</object>-->
+<
 
         <section id="prueba">
             <center><embed src="../../Reproductor Robnei/index.htm" name="obj1" width="410" height="600"></center>
