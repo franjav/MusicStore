@@ -1,0 +1,115 @@
+/* 
+    Document   : celdaStyle
+    Created on : 12/11/2012, 05:06:09 PM
+    Author     : Franjav
+    Description:
+        Adicionar estilo a las celdas o campos que se han llenado con datos erroneos
+*/
+
+
+.errorTip{
+	/* The error divs */
+	background-color:#970F08;
+	color:white;
+	font-size:10px;
+	height:26px;
+	letter-spacing:0.4px;
+	margin-left:20px;
+	padding:5px 0 5px 10px;
+	position:absolute;
+	text-shadow:1px 1px 0 #555555;
+	width:200px;
+	right:-130px;
+}
+
+
+
+.error{
+    height:15px;
+}
+div.errorimg{
+    padding-left:20px;
+    float:left;
+    background:transparent url(../images/error.png) no-repeat center left;
+    height:15px;
+    width:140px;
+    color:red;
+}
+
+#status
+{
+    font-size:10px;
+    margin-left:5px; /* distancia al borde del campo */
+}
+.green
+{
+    background-color:#CEFFCE;
+}
+.red
+{
+    background-color:#FFD9D9;
+}
+
+#statusEmail
+{
+    font-size:10px;
+    margin-left:5px; /* distancia al borde del campo */
+}
+.green
+{
+    background-color:#CEFFCE;
+}
+.red
+{
+    background-color:#FFD9D9;
+}
+
+
+
+#statusPass
+{
+    font-size:10px;
+    margin-left:5px; /* distancia al borde del campo */
+}
+.green
+{
+    background-color:#CEFFCE;
+}
+.red
+{
+    background-color:#FFD9D9;
+}
+
+#statusPassConfirm
+{
+    font-size:10px;
+    margin-left:5px; /* distancia al borde del campo */
+}
+.green
+{
+    background-color:#CEFFCE;
+}
+.red
+{
+    background-color:#FFD9D9;
+}
+
+
+
+/*   AQUI GENERE UN ESTILO CSS PARA MOSTRAR ERRORES EN EL LOGIN - FRANJAV */
+
+.info, .exito, .alerta, .errorL {
+       font-family:Arial, Helvetica, sans-serif; 
+       font-size:13px;
+       border: 1px solid;
+       margin: 10px 0px;
+       padding:15px 10px 15px 50px;
+       background-repeat: no-repeat;
+       background-position: 10px center;
+}
+
+.errorL {
+       color: #D8000C;
+       background-color: #FFBABA;
+       background-image: url(../images/Error-icon.png);
+}
