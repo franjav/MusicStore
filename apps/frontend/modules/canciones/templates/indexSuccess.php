@@ -11,10 +11,10 @@
   <thead>
     <tr>
     
-      <th>Nombrecancion</th>
-      <th>Interprete</th>
-      <th>Album</th>
-      <th>Genero</th>
+      <th>Nombrecancion<a href="canciones/nombre"><img src="../../web/images/check.jpg" width="30" height="30"</a></th>
+      <th>Interprete<a href="canciones/interprete"><img src="../../web/images/check.jpg" width="30" height="30"</a></th>
+      <th>Album<a href="canciones/album"><img src="../../web/images/check.jpg" width="30" height="30"</a></th>
+      <th>Genero<a href="canciones/genero"><img src="../../web/images/check.jpg" width="30" height="30"</a></th>
       <th>Eliminar</th>
       <th>Editar</th>
       

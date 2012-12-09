@@ -34,6 +34,11 @@ class disponiblesActions extends sfActions
         $this->txt_identificacion = $txt_identificacion;
         $this->aDisponibles = $cDisponibles;
   }
+  
+   
+  
+  
+  
  public function executeBuscar(sfWebRequest $request)
   {
         $this->setLayout('layout_sn');    

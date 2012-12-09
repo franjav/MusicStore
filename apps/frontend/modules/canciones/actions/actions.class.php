@@ -18,6 +18,92 @@ class cancionesActions extends sfActions
       ->execute();
   }
 
+  
+  public function executeNombre(sfWebRequest $request)
+  {
+     $pCanciones = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $pCanciones = Doctrine_Core::getTable('canciones')->findOneBynombreCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->pCanciones= $pCanciones;
+  }
+  
+  public function executeInterprete(sfWebRequest $request)
+  {
+     $iCanciones = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $iCanciones = Doctrine_Core::getTable('canciones')->findOneBynombreCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->iCanciones= $iCanciones;
+  }
+  
+  
+   public function executeGenero(sfWebRequest $request)
+  {
+     $pCanciones = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $pCanciones = Doctrine_Core::getTable('canciones')->findOneBynombreCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->pCanciones= $pCanciones;
+  }
+  
+  
+   public function executeAlbum(sfWebRequest $request)
+  {
+     $pCanciones = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $pCanciones = Doctrine_Core::getTable('canciones')->findOneBynombreCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->pCanciones= $pCanciones;
+  }
+  
+  
+public function executeBuscar(sfWebRequest $request)
+  {
+        // inicializando variables
+        $aCanciones = array();
+        // tomando los datos del formulario
+        $txt_identificacion = $this->getRequestParameter('txt_identificacion');
+
+        if ($this->getRequest()->getMethod() == sfRequest::POST) {
+            //echo ("$txt_identificacion");
+            $aCanciones = Doctrine_Core::getTable('canciones')->findOneBynombreCancion("$txt_identificacion");
+        }
+
+        // asignando variables para ser usadas en el template
+        $this->txt_identificacion = $txt_identificacion;
+        $this->aCanciones= $aCanciones;
+  }
+  
+  
   public function executeShow(sfWebRequest $request)
   {
     $this->canciones = Doctrine_Core::getTable('Canciones')->find(array($request->getParameter('idcanciones')));

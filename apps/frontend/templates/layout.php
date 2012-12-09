@@ -51,6 +51,7 @@
 		<ul class="toggle">
                     <li class="icn_categories"><a href="<?php echo url_for('canciones/index') ?>">Listar Canciones</a></li>
                     <li class="icn_new_article"><a href="<?php echo url_for('canciones/new') ?>">Subir Canciones</a></li>
+                     <li class="icn_search"><a href="<?php echo url_for('canciones/buscar') ?>">Buscar Canciones</a></li>
               	</ul>
           <h3>Mis Listas</h3>
 		<ul class="toggle">
@@ -65,7 +66,7 @@
 
             <h3>Reportes</h3>
                 <ul class="toggle">
-                  <li class="icn_folder"><a href="#">M&aacute;s escuchadas</a></li>
+                 <li class="icn_folder"><a href="<?php echo url_for('disponibles/graficar') ?>">Precios</a></li>
                   <li class="icn_folder"><a href="#">M&aacute;s compradas</a></li>
                   <li class="icn_folder"><a href="#">Ingresos ventas</a></li>
                   
