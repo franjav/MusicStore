@@ -82,18 +82,10 @@
         <section id="main" class="column">
 		<center><h4 class="alert_info">Bienvenido Administrador </h4></center><!-- end of stats article -->
           
-<!--                <section id="audioplayer_1" class="column">
-                    <script type="text/javascript">
-                        AudioPlayer.embed("audioplayer_1", {soundFile: "http://localhost/musicstore/web/pru.mp3"});
-                        var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
-                    </script>  
-                </section>-->
-                <!-- DIV que contiene el reproductor. -->
-<!-- DIV que contiene el reproductor. -->
-
-                
-            
-                <?php echo $sf_content ?>                 
+                <!-- ESTO PARA DARLE UN ESTILO A TODOS LOS FORMULARIOS EN ESTA SECCION -->
+                <div id="wrapper">             
+                     <?php echo $sf_content ?>                     
+                </div>  
         </section>
 
         
