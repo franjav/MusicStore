@@ -5,7 +5,15 @@
 
 
 default:
-newSucess:        
+newSuccess:        
   layout:         layout_sn
-indexSucess:
-    layout:       layout
+albumSuccess:        
+  layout:         layout_sn
+buscarSuccess:    
+  layout:         layout_sn
+generoSuccess:
+  layout:         layout_sn
+interpreteSuccess:
+  layout:         layout_sn
+nombreSuccess:
+  layout:         layout_sn
