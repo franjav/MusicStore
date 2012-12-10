@@ -7,7 +7,14 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-       
+    <?php include('modules/login/actions'); ?>
+        <!--<script language="javascript" type="text/javascript" src="../../web/flashmp3player/swfobject.js" ></script>-->   
+        <!--<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+        <script type="text/javascript">  
+            AudioPlayer.setup("http://localhost/musicstore/web/player.swf", {  
+                width: 350 
+            });  
+        </script>-->
   
 		
   <link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
