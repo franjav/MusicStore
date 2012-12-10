@@ -62,7 +62,7 @@ $rs2 = $st2->fetchColumn();
        <td>Precio total</td><td><?php echo "$". $rs2;?></td>
         </tr>
        <ul class="sf_admin_actions">
-     <input type="submit" value="COMPRAR" />
+     <input type="submit" value="COMPRAR" method="POST" action="comprar" />
        
       
     

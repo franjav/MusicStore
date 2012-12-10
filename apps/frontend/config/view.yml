@@ -12,7 +12,7 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css,main2.css,style.css,formularios.css]
+  stylesheets:    [main.css,main2.css]
 
   javascripts:    [hideshow.js,jquery-1.5.2.min.js,jquery.equalHeight.js,jquery.tablesorter.min.js,audio-player.js,swfobject.js]
 

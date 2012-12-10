@@ -4,9 +4,11 @@
 default:
 buscarSucess:        
   layout:         layout_sn
-indexSucess:
+indexSuccess:
     layout:       layout
-recomendSucess: 
+recomendSuccess: 
     layout:       layout_sn
-norecomendSucess: 
-    layout:       layout_sn    
+norecomendSuccess: 
+    layout:       layout_sn
+addSuccess:
+  layout:         layout_sn

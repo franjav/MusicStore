@@ -51,7 +51,8 @@
 		<ul class="toggle">
                     <li class="icn_categories"><a href="<?php echo url_for('canciones/index') ?>">Listar Canciones</a></li>
                     <li class="icn_new_article"><a href="<?php echo url_for('canciones/new') ?>">Subir Canciones</a></li>
-              	</ul>
+                    <li class="icn_search"><a href="<?php echo url_for('canciones/buscar') ?>">Buscar Canciones</a></li>
+                </ul>
           <h3>Mis Listas</h3>
 		<ul class="toggle">
                     <li class="icn_categories"><a href="<?php echo url_for('listas/index') ?>">Ver Listas</a></li>

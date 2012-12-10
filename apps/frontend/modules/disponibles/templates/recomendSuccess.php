@@ -37,8 +37,8 @@ $rs1 = $st1->fetchAll();
       <th>Interprete</th>
       <th>Albúm</th>
       <th>Genero</th>
-      <th>Precio $</th>
-       <th></th>
+      <th>Precio$</th>
+       <th>Borrar</th>
       
     </tr>
   </thead>
@@ -56,7 +56,7 @@ $rs1 = $st1->fetchAll();
             <td><?php echo $recomendadasArray['album'];?></td>
             <td><?php echo $recomendadasArray['genero'];?></td>
             <td><?php echo $recomendadasArray['precio'];?></td>
-            <td><a href="norecomend?iddisponibles=<?php echo $recdisponibles['iddisponibles'];?>"><img src="../../../web/images/Trash_icon.png"> </a> Borrar</td>
+            <td><a href="norecomend?iddisponibles=<?php echo $recdisponibles['iddisponibles'];?>"><img src="../../../web/images/Trash_icon.png"> </a></td>
             
             </tr>
   </tbody>

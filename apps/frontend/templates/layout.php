@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-    <?php include('modules/login/actions'); ?>
+    <
         <!--<script language="javascript" type="text/javascript" src="../../web/flashmp3player/swfobject.js" ></script>-->   
         <!--<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
         <script type="text/javascript">  
@@ -81,7 +81,7 @@
 	</aside><!-- end of sidebar -->
 
         <section id="main" class="column">
-            <center><h4 class="alert_info">Bienvenido   </h4></center><!-- end of stats article -->
+            <center><h4 class="alert_info">Bienvenido </h4></center><!-- end of stats article -->
           
                 <!-- ESTO PARA DARLE UN ESTILO A TODOS LOS FORMULARIOS EN ESTA SECCION -->
                 <div id="wrapper">             
@@ -93,12 +93,12 @@
         <aside id="rsidebar" class="column">
             <h3>PROMOCIONES DEL DIA</h3>
             
-                <a href="<?php echo url_for('disponibles/index') ?>"> <img src="../../web/images/2x1.PNG" width="150" height="146" style="margin: 2%" /></a>
-                <a href="<?php echo url_for('disponibles/index') ?>"><img src="../../web/images/40.png" width="150" height="146" style="margin: 2%"/></a> 
+                <a href="<?php echo url_for('disponibles/index') ?>"> <img src="../../../web/images/2x1.PNG" width="150" height="146" style="margin: 2%" /></a>
+                <a href="<?php echo url_for('disponibles/index') ?>"><img src="../../../web/images/40.png" width="150" height="146" style="margin: 2%"/></a> 
                 <hr/>
                 
                 <h3>Top 5 de la semana</h3>
-                <a href="<?php echo url_for('disponibles/recomend') ?>"> <img src="../../web/images/top5.PNG" width="150" height="146" style="margin: 2%" /></a>
+                <a href="<?php echo url_for('disponibles/recomend') ?>"> <img src="../../../web/images/top5.PNG" width="150" height="146" style="margin: 2%" /></a>
                
 <!--               
                 <ul  class="toggle">
@@ -117,7 +117,7 @@
 </object>-->
 
         <section id="prueba">
-            <center><embed src="../Reproductor Robnei/index.htm" name="obj1" width="410" height="600"></center>
+            <center><embed src="../../Reproductor Robnei/index.htm" name="obj1" width="410" height="600"></center>
         </section>
 
   </body>
