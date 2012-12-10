@@ -292,7 +292,7 @@ p.change_link{
 /** Styling both forms **/
 #register, 
 #login{
-	position: absolute;
+	position: static;
 	top: 0px;
 	width: 88%;	
 	padding: 18px 6% 60px 6%;

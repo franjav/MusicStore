@@ -1,3 +1,5 @@
+<div id="login" class="animate form">
+
 <center><h1> MI PERFIL</h1></center>
 
 
@@ -27,5 +29,7 @@
     <?php endforeach; ?>
   </tbody>
 </table>
+
+</div>
 
   <!--<a href="<?php echo url_for('usuarios/new') ?>">New</a>-->

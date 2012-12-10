@@ -1,17 +1,21 @@
 
 <html>
     
-    <head>
-  
+    <head> 
+      
+        
+        
     </head>
 <?php decorate_with('layout')?>
 <center><h1>MIS CANCIONES</h1></center>
 
-<table border="1" width="150%" cellspacing="0" class="tablex">
+<div id="login" class="animate form">
+
+<table border="0" width="100%" cellspacing="20" class="table">
   <thead>
     <tr>
     
-      <th>Nombrecancion<a href="nombre"><img src="../../../web/images/check.jpg" width="30" height="30"</a></th>
+        <th>Nombrecancion<a href="nombre"><img src="../../../web/images/check.jpg" width="30" height="30"</a></th>
       <th>Interprete<a href="interprete"><img src="../../../web/images/check.jpg" width="30" height="30"</a></th>
       <th>Album<a href="album"><img src="../../../web/images/check.jpg" width="30" height="30"</a></th>
       <th>Genero<a href="genero"><img src="../../../web/images/check.jpg" width="30" height="30"</a></th>
@@ -95,4 +99,7 @@ if($nro_reg_can==0){
   ?>
 </div>
   
+    
+</div>
+    
 </html>

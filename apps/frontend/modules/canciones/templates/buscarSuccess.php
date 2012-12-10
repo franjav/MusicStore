@@ -1,5 +1,8 @@
 <?php use_helper("I18N");?>
 <?php ?>
+
+<div id="login" class="animate form">
+
 <div id="sf_admin_container">
     <center><h1>Buscar Canciones</h1></center>
     <?php echo form_tag('canciones/buscar', 'id=sf_admin_edit_form name=sf_admin_edit_form multipart=true') ?>
@@ -12,8 +15,13 @@
 </fieldset>
 
  <ul class="sf_admin_actions">
-     <input type="submit" value="Buscar" />
+     <p class="signin button">
+         <input type="submit" value="Buscar" />
+     </p>
 </ul>
+    
+</div>
+    
 <?php 
 
 
