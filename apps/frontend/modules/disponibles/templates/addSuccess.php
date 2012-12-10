@@ -33,6 +33,7 @@ $rs2 = $st2->fetchColumn();
 
       <th>IdDisponibles</th>
       <th>Nombre Canción</th>
+      <th>Interprete</th>
       <th>Precio $</th>
        <th></th>
       
@@ -47,6 +48,7 @@ $rs2 = $st2->fetchColumn();
         <tr>
             <td><?php echo $disponiblesArray['idDisponibles'];?></td>    
             <td><?php echo $disponiblesArray['nombreCancion'];?></td>
+             <td><?php echo $disponiblesArray['interprete'];?></td>
             <td><?php echo $disponiblesArray['precio'];?></td>
             <td><a href="borrar?iddisponibles=<?php echo $disponibles['iddisponibles'];?>"><img src="../../../web/images/Trash_icon.png"> </a> Borrar</td>
             </tr>

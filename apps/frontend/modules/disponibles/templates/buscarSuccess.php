@@ -41,7 +41,6 @@ if (count($aDisponibles) > 1) {
     <th>Interprete</th>
     <th>Album</th>
     <th>genero</th>
-    <th>Ruta</th>
     <th>Precio</th>
     
   </tr>
@@ -54,7 +53,6 @@ if (count($aDisponibles) > 1) {
       <td><?php echo $aDisponibles->getinterprete() ?></td>
       <td><?php echo $aDisponibles->getalbum() ?></td>
       <td><?php echo $aDisponibles->getgenero() ?></td>
-      <td><?php echo $aDisponibles->getruta() ?></td>
       <td><?php echo $aDisponibles->getprecio() ?></td>
 
   </tr>

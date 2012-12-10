@@ -74,7 +74,7 @@
 	</aside><!-- end of sidebar -->
 
         <section id="main" class="column">
-		<center><h4 class="alert_info">Bienvenido Administrador </h4></center><!-- end of stats article -->
+            <center><h4 class="alert_info">Bienvenido   </h4></center><!-- end of stats article -->
           
                 <!-- ESTO PARA DARLE UN ESTILO A TODOS LOS FORMULARIOS EN ESTA SECCION -->
                 <div id="wrapper">             
