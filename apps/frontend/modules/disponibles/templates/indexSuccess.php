@@ -68,9 +68,9 @@ if($nro_reg==0){
             <td><?php echo $disponiblesArray['interprete'];?></td>
             <td><?php echo $disponiblesArray['album'];?></td>
             <td><?php echo $disponiblesArray['genero'];?></td>
-             <td><a href="disponibles/recomend?iddisponibles=<?php echo $disponibles['iddisponibles'];?>">Recomendar</a></td>
+             <td><a href="recomend?iddisponibles=<?php echo $disponibles['iddisponibles'];?>">Recomendar</a></td>
             <td><?php echo $disponiblesArray['precio'];?></td>
-           <td><a href="disponibles/add?iddisponibles=<?php echo $disponibles['iddisponibles'];?>"><img src="../../web/images/carrito.png"></a></td>
+           <td><a href="add?iddisponibles=<?php echo $disponibles['iddisponibles'];?>"><img src="../../../web/images/carrito.png"></a></td>
  
             </tr>
             

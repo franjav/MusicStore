@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+    <?php include('modules/login/actions'); ?>
         <!--<script language="javascript" type="text/javascript" src="../../web/flashmp3player/swfobject.js" ></script>-->   
         <!--<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
         <script type="text/javascript">  
@@ -80,7 +81,7 @@
 	</aside><!-- end of sidebar -->
 
         <section id="main" class="column">
-		<center><h4 class="alert_info">Bienvenido Administrador </h4></center><!-- end of stats article -->
+            <center><h4 class="alert_info">Bienvenido   </h4></center><!-- end of stats article -->
           
                 <!-- ESTO PARA DARLE UN ESTILO A TODOS LOS FORMULARIOS EN ESTA SECCION -->
                 <div id="wrapper">             
